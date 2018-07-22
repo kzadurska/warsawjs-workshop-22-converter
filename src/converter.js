@@ -7,6 +7,8 @@ class Converter {
   }
 
   convert(sourceCurrency, targetCurrency, value) {
+    sourceCurrency = sourceCurrency.toLowerCase()
+    targetCurrency = targetCurrency.toLowerCase()
     if (!this.conversionTable[sourceCurrency] || !this.conversionTable[targetCurrency]) {
       return null
     }

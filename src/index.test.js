@@ -1,4 +1,4 @@
-import './index';
+// import './index';
 
 test('Jest should work', () => {
 });

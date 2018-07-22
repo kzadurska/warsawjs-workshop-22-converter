@@ -13,15 +13,16 @@ const input = document.querySelector('#input-value');
 const resultContainer = document.querySelector('#result');
 
 inputCurrency.addEventListener('change', () => {
-  resultContainer.innerText = wjsConverter.convert(input.value, inputCurrency.value, outputCurrency.value);
+  resultContainer.innerText = wjsConverter.convert(outputCurrency.value, inputCurrency.value, input.value);
+      
   wjsConverter.generateConvertTable(currentRateContainer, inputCurrency);
 });
 
 outputCurrency.addEventListener('change', () => {
-  resultContainer.innerText = wjsConverter.convert(input.value, inputCurrency.value, outputCurrency.value);
+  resultContainer.innerText = wjsConverter.convert(outputCurrency.value, inputCurrency.value, input.value);
   wjsConverter.generateConvertTable(currentRateContainer, inputCurrency);
 });
 
 input.addEventListener('keyup', () => {
-  resultContainer.innerText = wjsConverter.convert(input.value, inputCurrency.value, outputCurrency.value);
+  resultContainer.innerText = wjsConverter.convert(outputCurrency.value, inputCurrency.value, input.value);
 });
