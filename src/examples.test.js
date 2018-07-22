@@ -9,6 +9,10 @@ test('Function that greets user', () => {
   expect(examples.hello(userName)).toEqual('Hello, Kasia')
 })
 
-test('returns a float with centimals', () => {
-  
+test('return fibonnaci from number', () => {
+  expect(examples.fibonacci(3)).toEqual(2)
+
+  expect(examples.fibonacci(5)).toEqual(5)
+
+  expect(examples.fibonacci(9)).toEqual(34)
 })
