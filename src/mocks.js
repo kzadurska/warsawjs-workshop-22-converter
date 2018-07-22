@@ -1,6 +1,7 @@
 const Mocks = {
   currenciesTable: {
     /*currencyTo: { currencyFrom: rate }*/
+    // 3.69/4.62 chf/ gbp >>> chf source, gbp target
     'pln': {'eur': '4.25', 'usd': '3.59', 'gbp': '4.62', 'chf': '3.69'},
     'eur': {'pln': '0.24', 'usd': '0.84', 'gbp': '1.09', 'chf': '0.87'},
     'usd': {'eur': '1.18', 'pln': '0.28', 'gbp': '1.29', 'chf': '1.03'},

@@ -1,5 +1,11 @@
 import Converter from './converter';
 import Mocks from './mocks'
+
+// import NBPService from './NBPService'
+// const service = new NBPService()
+// const rates = service.generateRatesTable({'eur': '4.25', 'usd': '3.59', 'gbp': '4.62', 'chf': '3.69'})
+// console.log(rates)
+
 const inputCurrency = document.querySelector('#input-currency');
 const outputCurrency = document.querySelector('#output-currency');
 
