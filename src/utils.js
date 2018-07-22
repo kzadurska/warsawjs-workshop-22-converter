@@ -1,7 +1,6 @@
 const utils = {
   roundToCentimals: (number) => {
-    const stringNumber = number.toString()
-    return number
+    return number.toFixed(2)
   }
 }
 

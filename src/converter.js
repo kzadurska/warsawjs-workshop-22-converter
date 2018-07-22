@@ -1,6 +1,13 @@
+import utils from './utils'
+
 class Converter {
-  constructor() {
-    console.log('Converter here!!11')
+  constructor(conversionTable) {
+    this.conversionTable = conversionTable
+  }
+
+  convert(sourceCurrency, targetCurrency, value) {
+    const rate = this.conversionTable[targetCurrency][sourceCurrency]
+    return utils.roundToCentimals(rate * value)
   }
 }
 
