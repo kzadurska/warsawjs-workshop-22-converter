@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WarsawJS - exchange rate</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <span>Warsaw<strong>JS</strong></span>
+    </header>
+    <main>
+        <section class="exchange">
+            <div class="currency">
+                <input id="input-value" type="number"/>
+                <select id="input-currency">
+                    <option value="PLN">PLN</option>
+                    <option value="GBP">GBP</option>
+                    <option value="USD">USD</option>
+                    <option value="CHF">CHF</option>
+                </select>
+            </div>
+            <div class="arrow">
+                <img src="img/arrow.png" alt="->" />
+            </div>
+            <div class="currency">
+                <span id="result">0</span>
+                <select id="output-currency">
+                    <option value="PLN">PLN</option>
+                    <option value="GBP">GBP</option>
+                    <option value="USD">USD</option>
+                    <option value="CHF">CHF</option>
+                </select>
+            </div>
+        </section>
+        <section class="rate">
+            <div class="warsawjs-logo-container">
+                <img src="img/warsawjs.png" alt="WarsawJS" />
+            </div>
+            <div>
+                <h6>Todays <span id="current-rate"></span> rates</h6>
+                <ul>
+
+                </ul>
+            </div>
+        </section>
+    </main>
+<script src="src/index.js"></script>
+</body>
+</html>
